@@ -1,16 +1,23 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/logo.svg">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title class="toolbar-title">Admin AM</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
+  <h2 style="font-size: 25px; color: white;">Welcome Admin!</h2>
+  <p style="text-align: justify;">
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
   </p>
-  <p>
+  <p style="text-align: justify;">
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>

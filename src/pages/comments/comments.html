@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="toolbar-title">Approve Comments</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    {{netavailable}}
+    <ion-list>
+        <ion-item text-wrap
+          *ngFor="let item of items">
+          <h3>{{ item.sender + ' - ' + item.message }}</h3>
+          <ion-buttons end>
+             <button
+                ion-button
+                icon-start
+                color="danger"
+                small
+                (click)="deleteRecord(item)"><ion-icon name="md-close-circle"></ion-icon></button>
+             <button
+                ion-button
+                icon-start
+                color="secondary"
+                (click)="updateRecord(item)"
+                small>
+                  <ion-icon name="md-checkmark-circle"></ion-icon>
+                  </button>
+           </ion-buttons>
+      </ion-item>
+     </ion-list>
+
+</ion-content>
